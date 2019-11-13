@@ -16,18 +16,20 @@ class MainActivity : AppCompatActivity() {
             val editTextStr = editText.text.toString()
             val editText2 = findViewById<EditText>(R.id.bootstrap_edittext2)
             val editText2Str = editText2.text.toString()
-            val stations = mutableListOf("三田", "大門", "新橋")
+            val stations = mutableListOf("西馬込","馬込","中延","戸越","五反田","高輪台","泉岳寺", "大門", "新橋","東銀座","宝町")
+           // val undesired_uuids= mutableListOf("UAYZT122","askd43fi")
             val index = stations.indexOf(editTextStr)
             val index2 = stations.indexOf(editText2Str)
+           // val request = undesired_uuids.indexOf(editTextStr)
+            //val request2 = undesired_uuids.indexOf(editText2Str)
             check(index, index2)
         }
     }
-    private fun check(index: Int,index2: Int):String {
+    private fun check(index: Int,index2: Int):Boolean {
         if (index != -1 && index2 != -1) {
             val intent = Intent(application, SubActivity::class.java)
             startActivity(intent)
         }
-        return "対応していない駅名です"
+        return true
     }
-
 }
