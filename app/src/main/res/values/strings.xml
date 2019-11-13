@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">layout</string>
+    <string name="BootstrapLabel">決定</string>
+    <string name="hint1">出発する駅を選んでください</string>
+    <string name="hint2">到着する駅を選んでください</string>
+    <string name="label1">Bootstrap</string>
+</resources>
