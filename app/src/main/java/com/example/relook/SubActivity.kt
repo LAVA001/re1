@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.RemoteException
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_sub.*
 import org.altbeacon.beacon.*
@@ -65,6 +66,8 @@ class SubActivity: AppCompatActivity(), BeaconConsumer {
         })
 
         beaconManager.addRangeNotifier{ beacons: MutableCollection<Beacon>?, _: Region? ->
+            Log.d("Detected Beacons", beacons?.map { it.id1 }?.joinToString() ?: "" )
+            Log.d("Undesired uuid", undesiredUuid)
             if (beacons?.any{ beacon -> beacon.id1.toString() == undesiredUuid } == true){
                 mainHandler.post{ alertDialog() }
             }
