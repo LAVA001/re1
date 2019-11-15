@@ -1,4 +1,4 @@
-package com.example.relook
+package com.gg.relook
 import android.content.Intent
 import android.nfc.NfcAdapter.EXTRA_DATA
 import android.os.Bundle
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             val editText2 = findViewById<EditText>(R.id.bootstrap_edittext2)
             val editText2Str = editText2.text.toString()
             val stations = mutableListOf("西馬込","馬込","中延","戸越","五反田","高輪台","泉岳寺","三田" ,"大門", "新橋","東銀座","宝町","日本橋","人形町","東日本橋","浅草橋","蔵前","浅草","本所吾妻橋","押上(スカイツリー前)")
-            val requests = mutableListOf("28534442-4c45-4144-80c0-1800ffffffff","38534442-4c45-4144-80c0-1800ffffffff","48534442-4c45-4144-80c0-1800ffffffff","58534442-4c45-4144-80c0-1800ffffffff","68534442-4c45-4144-80c0-1800ffffffff","78534442-4c45-4144-80c0-1800ffffffff","88534442-4c45-4144-80c0-1800ffffffff","uuid8" ,"deac3f40829011e5b15c0002a5d5c51b0000000","uuid10","uuid11","uuid12","uuid13","uuid14","uuid15","uuid16","uuid17","uuid18")
+            val requests = mutableListOf("28534442-4c45-4144-80c0-1800ffffffff","38534442-4c45-4144-80c0-1800ffffffff","48534442-4c45-4144-80c0-1800ffffffff","58534442-4c45-4144-80c0-1800ffffffff","68534442-4c45-4144-80c0-1800ffffffff","78534442-4c45-4144-80c0-1800ffffffff","88534442-4c45-4144-80c0-1800ffffffff","uuid7" ,"deac3f40829011e5b15c0002a5d5c51b","uuid10","uuid11","uuid12","uuid13","uuid14","uuid15","uuid16","uuid17","uuid18")
             val index = stations.indexOf(editTextStr)
             val index2 = stations.indexOf(editText2Str)
             val range = index..index2

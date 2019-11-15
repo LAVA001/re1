@@ -5,5 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SubActivity">
-
+    <ImageView
+        android:id="@+id/image_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/img_description" />
 </androidx.constraintlayout.widget.ConstraintLayout>

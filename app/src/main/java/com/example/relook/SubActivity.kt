@@ -1,4 +1,4 @@
-package com.example.relook
+package com.gg.relook
 
 import android.Manifest
 import android.content.pm.PackageManager
