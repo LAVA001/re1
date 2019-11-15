@@ -1,4 +1,4 @@
-package com.relook
+package com.gg.relook
 
 import android.app.Application
 import com.beardedhen.androidbootstrap.TypefaceProvider
